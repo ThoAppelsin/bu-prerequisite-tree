@@ -1,3 +1,5 @@
+![Example for CMPE](https://raw.githubusercontent.com/ThoAppelsin/bu-prerequisite-tree/master/exampleCMPE.png)
+
 In Boğaziçi University (BU), many departments have a lot of their courses as required,
 and most of the time they are inter-dependent. If you are an irregular student,
 or for some reason had to take your courses out-of-order, then these dependencies
