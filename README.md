@@ -88,6 +88,10 @@ On the 3rd step, where it makes a graph of courses, however, it acts rather inte
 3) Grouping the lectures that share the same rank together.
 4) Plot the lectures in a rank-ascending order, row by row, with same-rank lectures on the same row.
 
+> **Course Rank:** A metric for the courses. A course with no prerequisite has the rank 0.
+> Every other course has the lowest possible integer as its rank, with the constraint that a course
+> must have greater rank than its prerequisites, and greater or equal rank than its co-requisites.
+
 Rank-ordering has two advantages compared to the naive semester-ordering:
 
 1) The edges tend to cross less over the irrelevant nodes.
