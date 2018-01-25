@@ -88,9 +88,14 @@ On the 3rd step, where it makes a graph of courses, however, it acts rather inte
 3) Grouping the lectures that share the same rank together.
 4) Plot the lectures in a rank-ascending order, row by row, with same-rank lectures on the same row.
 
-**Course Rank:** A metric for the courses. A course with no prerequisite has the rank 0.
-Every other course has the lowest possible integer as its rank, with the constraint that a course
-must have greater rank than its prerequisites, and greater or equal rank than its co-requisites.
+**Course rank** is a metric for the courses defined as follows:
+- A course with no dependency has the rank 1.
+- The rank of a course A with some dependencies is determined through taking the maximum of the following:
+    - 1 added to the ranks of all the prerequisite courses for course A.
+    - The ranks of all the co-requisite courses for course A.
+
+As an intuition, the rank of a course is the semester in which a hypothetical perfect student would
+be taking that course, if each and every course were to be given in every semester, with no conflicts, etc.
 
 Rank-ordering has two advantages compared to the naive semester-ordering:
 
