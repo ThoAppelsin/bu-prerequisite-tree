@@ -89,8 +89,8 @@ On the 3rd step, where it makes a graph of courses, however, it acts rather inte
 4) Plot the lectures in a rank-ascending order, row by row, with same-rank lectures on the same row.
 
 **Course rank** is a metric for the courses defined as follows:
-- A course with no dependency has the rank 1.
-- The rank of a course A with some dependencies is determined through taking the maximum of the following:
+- If the course has no dependency, it has the rank 1.
+- Otherwise, the course A has the maximum of the following as its rank:
     - 1 added to the ranks of all the prerequisite courses for course A.
     - The ranks of all the co-requisite courses for course A.
 
